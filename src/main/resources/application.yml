@@ -1,0 +1,16 @@
+spring:
+    jpa.hibernate.ddl-auto: update
+    datasource.url: jdbc:mysql://localhost:3306/student_db
+    datasource.username: root
+    datasource.password: mysql
+
+
+logging:
+    level:
+    org.springframework.web: ERROR
+    com.mypack.demo: ERROR
+    pattern:
+        console: "%d{yyyy-MM-dd HH:mm:ss} - %msg%n"
+        file: "%d{yyyy-MM-dd HH:mm:ss} - %msg%n"
+    file: C:\\Temp\\demo.log
+
